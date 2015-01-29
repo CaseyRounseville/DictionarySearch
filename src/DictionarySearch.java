@@ -69,17 +69,17 @@ public class DictionarySearch {
       count++;
       int mid=(min+max)/2;
       int compare=words.get(mid).compareTo(wordToFind);
-      if(compare<0){
+      if(compare>0){
         max=mid-1;
       }
-      else if(compare>0){
+      else if(compare<0){
         min=mid+1;
       }
       else{
         return new SearchResult(mid,count);
       }
     }
-    return new SearchResult(-1,count);////FIX ME////
+    return new SearchResult(-1,count);
   }
   
   /**

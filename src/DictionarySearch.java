@@ -98,4 +98,10 @@ public class DictionarySearch {
     return result;
   }
 }
-
+///Questions:
+ //1. It will execute X+1 times.
+ //2. It will execute X+1 times.
+ //3. first element=1 time   
+ //   last element=nameOfList.size() times
+ //4. first element=The larger the list is , the more times the loop will execute to find the element at the first or last index.
+ 
